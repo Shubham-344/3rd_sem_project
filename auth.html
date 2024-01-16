@@ -26,21 +26,25 @@
             display: flex;
             width: 225px;
             border-top-left-radius: 25px;
-            
+            justify-content: center;
+            color: rgb(120, 18, 18);
         }
         .login_selected{
             display: flex;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
-            background-color: purple;
+            background-color: rgb(120, 18, 18);
             width: 225px;
-            
+            justify-content: center;
+            color: white;
         }
         .signup{
             background-color: rgb(237, 235, 235);
             display: flex;
             width: 225px;
             border-top-right-radius: 25px;
+            justify-content: center;
+            color: rgb(120, 18, 18);
            
         }
         .signup_selected{
@@ -48,26 +52,37 @@
             display: flex;
             border-top-right-radius: 25px;
             border-top-left-radius: 25px;
-            background-color: purple;
+            background-color: rgb(120, 18, 18);
+            justify-content: center;
+            color: white;
         }
         .credential{
-            background-color: purple;
+            background-color: rgb(120, 18, 18);
             display: flex;
             flex-grow:8;
             border-bottom-right-radius: 25px;
             border-bottom-left-radius: 25px;
         }
         .logintext{
+            font-size: 24px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-weight: bolder;
         }
     </style>
 </head>
 <body class="auhtPage">
+    <script src="home.js">  
+    </script>  
     <div class="authBox">
         <div class="login_signup">
             <div class="login" id="loginbtn" onclick="loginOpt()">
                 <p class="logintext">Login</p>
             </div>
-            <div class="signup" id="signupbtn" onclick="signupOpt()">signup</div>
+            <div class="signup" id="signupbtn" onclick="signupOpt()">
+                <p class="logintext">signin</p>
+            </div>
         </div>
         
         <div class="credential">3</div>

@@ -98,6 +98,8 @@ img.logo{
     display: flex;
     list-style: none;
     gap: 35px;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
 
 }
