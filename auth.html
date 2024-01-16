@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .auhtPage{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+        .authBox{
+            margin-top: 100px;
+            height: 500px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+        .login_signup{
+            display: flex;
+            height: 85px;
+        }
+        .login{
+            background-color: rgb(237, 235, 235);
+            display: flex;
+            width: 225px;
+            border-top-left-radius: 25px;
+            
+        }
+        .login_selected{
+            display: flex;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            background-color: purple;
+            width: 225px;
+            
+        }
+        .signup{
+            background-color: rgb(237, 235, 235);
+            display: flex;
+            width: 225px;
+            border-top-right-radius: 25px;
+           
+        }
+        .signup_selected{
+            width: 225px;
+            display: flex;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            background-color: purple;
+        }
+        .credential{
+            background-color: purple;
+            display: flex;
+            flex-grow:8;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .logintext{
+        }
+    </style>
+</head>
+<body class="auhtPage">
+    <div class="authBox">
+        <div class="login_signup">
+            <div class="login" id="loginbtn" onclick="loginOpt()">
+                <p class="logintext">Login</p>
+            </div>
+            <div class="signup" id="signupbtn" onclick="signupOpt()">signup</div>
+        </div>
+        
+        <div class="credential">3</div>
+    </div>
+    <script>
+        function loginOpt(){
+        var loginbtn = document.getElementById('loginbtn');
+            loginbtn.classList.remove("login");
+            loginbtn.classList.add("login_selected");
+            var signupbtn = document.getElementById('signupbtn');
+            signupbtn.classList.add("signup");
+            signupbtn.classList.remove("signup_selected");
+        }
+        function signupOpt(){
+            var loginbtn = document.getElementById('loginbtn');
+            loginbtn.classList.add("login");
+            loginbtn.classList.remove("login_selected");
+            var signupbtn = document.getElementById('signupbtn');
+            signupbtn.classList.remove("signup");
+            signupbtn.classList.add("signup_selected");
+
+        }
+    </script>
+</body>
+</html>

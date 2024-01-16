@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');*{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    /* background-color: aliceblue; */
+}
+.menu_container{
+    padding-top: 100px;
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+}
+h2{
+    font-weight: 500px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-weight: 900px;
+    font-size: 20px;
+    text-align: center;
+}
+.food_item{
+    height: 400px;
+    width: 400px;
+    background-color:#d1d1d1;
+    border-radius: 10px;
+    
+}
+.food_item:hover{
+    box-shadow: 5px 5px 20px 5px grey;
+}
+.submain1{
+    
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    justify-content: space-around;
+}
+.submain2{
+    display: flex;
+    
+    padding: 20px 10px 10px 10px;
+    justify-content: space-around;
+}
+.itemheading{
+    margin-top: 50px;
+    
+}
+img.foods{
+    height: 230px;
+    width: 230px;
+    margin-left: 90px;
+}
+.footer{
+    height: 400px;
+    background-color: #962121;
+    display: flex;
+    margin-top:50px;
+    justify-content: space-around;
+}
+.footertopic{
+    margin-top: 25px;
+    width: 250px;
+    color: white;
+}
+ul{
+    justify-content: center;
+    list-style-type:none;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+    text-align: start;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    background-color: aliceblue;
+}
+img.logo{
+    height: 50px;
+    
+}
+.opt{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    font-weight: 500;
+
+}
+.opt li{
+    display: flex;
+    color: red;
+    font-size: 17px;
+}
+li:hover{
+    border-bottom-style: outset;
+    border-width: 4px;
+    border-color: red;
+    cursor: pointer;
+}
+.btn{
+    min-width:125px ;
+    font-size: 17px;
+    height: 33px;
+    background-color: red;
+    color: white;
+    border: 1px solid transparent;
+    border-radius:7px ;
+    transition: 0.2s background-color ease-in;
+
+}
+.btn:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+        transition: 0.2s background-color ease-in;
+
+}
